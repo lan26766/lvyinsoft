@@ -1,0 +1,640 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+/* 导航栏样式 */
+.navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-menu a:hover {
+    color: #f0f0f0;
+}
+
+/* 首屏Banner区 */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+/* 软件介绍区 */
+.about {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+}
+
+.about .certificate {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about .certificate img {
+    max-width: 600px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 软件截图展示区 */
+.screenshots {
+    padding: 40px 0;
+    background-color: #f5f7fa;
+}
+
+.screenshots h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.screenshots .screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.screenshots .screenshot-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshots .screenshot-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.screenshots .screenshot-item h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.screenshots .screenshot-item img {
+    max-width: 100%;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 核心功能区 */
+.features {
+    padding: 40px 0;
+    background-color: #f5f7fa;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.features .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.features .feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features .feature-item .icon {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.features .feature-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 适用场景区 */
+.scenarios {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.scenarios h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.scenarios .scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.scenarios .scenario-item {
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scenarios .scenario-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.scenarios .scenario-item .icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.scenarios .scenario-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.scenarios .scenario-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 下载中心区 */
+.download {
+    padding: 40px 0;
+    background-color: #f5f7fa;
+}
+
+.download h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.download .download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.download .download-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.download .download-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.download .download-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.download .download-note {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+/* 版本与授权说明区 */
+.license {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.license h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.license .license-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.license .license-item {
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.license .license-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.license .license-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* 购买流程区 */
+.purchase {
+    padding: 40px 0;
+    background-color: #f5f7fa;
+}
+
+.purchase h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.purchase .purchase-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.purchase .step {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.purchase .step .step-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.purchase .step p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 联系方式区 */
+.contact {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.contact .contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact .contact-item {
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact .contact-item .icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact .contact-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact .wechat-qr {
+    text-align: center;
+}
+
+.contact .wechat-qr img {
+    max-width: 200px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 使用说明区 */
+.usage {
+    padding: 40px 0;
+    background-color: #f5f7fa;
+}
+
+.usage h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.usage .usage-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.usage .step {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.usage .step .step-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.usage .step p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 用户评价区 */
+.testimonials {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.testimonials .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonials .testimonial-item {
+    background-color: #f5f7fa;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.testimonials .testimonial-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+    font-style: italic;
+}
+
+.testimonials .testimonial-item .author {
+    font-size: 14px;
+    color: #999;
+    font-weight: 600;
+}
+
+/* 常见问题区 */
+.faq {
+    padding: 40px 0;
+    background-color: #f5f7fa;
+}
+
+.faq h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.faq .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq .faq-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.faq .faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.faq .faq-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* 页脚版权区 */
+.footer {
+    background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.95;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar .nav-menu {
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .about .certificate img {
+        max-width: 100%;
+    }
+
+    .features .features-grid,
+    .scenarios .scenarios-grid,
+    .download .download-grid,
+    .license .license-grid,
+    .purchase .purchase-steps,
+    .contact .contact-info,
+    .usage .usage-steps,
+    .testimonials .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
